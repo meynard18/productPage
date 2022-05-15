@@ -177,8 +177,13 @@ header {
 .featured-product article {
    display: flex;
    padding: 1rem;
+   margin: auto;
+   width: 97.5%;
+   height: max-content;
 }
 .image3 {
+   margin: auto;
+   width: 60%;
    height: auto;
 }
 .productLayout {
@@ -190,6 +195,7 @@ header {
    height: auto;
    width: 20rem;
    flex-shrink: 0;
+   padding: 1rem 0;
 }
 
 .colorBtn {
@@ -208,7 +214,7 @@ header {
 #productName {
    font-size: 1.5rem;
    color: var(--bigFonts);
-   padding-top: 1rem;
+   padding-top: 0.25rem;
 }
 #productPrice {
    font-size: 1.45rem;

@@ -53,8 +53,6 @@ async function fetchData() {
       fragment.append(productNameEl);
       productDetailsContainer.append(priceEl);
       productDetailsContainer.append(chooseColorEl);
-      priceEl.textContent = `$${699}`;
-      productDetailsEl.innerHTML = `<ul><li>On sale!</li><li>Faux Leather</li><li>Non-allergenic dye</li></ul>`;
       assemblyrequirementEl.textContent = `** Assembly required`;
       stockAvailability.textContent = `Please Enter Zip Code`;
 
