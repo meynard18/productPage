@@ -1,0 +1,68 @@
+{
+   "productName": "Leather Sofa",
+   "variants": [
+      {
+         "sku": "A01*Leather-Purple",
+         "title": "Purple",
+         "price": 699,
+         "assembly": true,
+         "color": "Purple",
+         "colorHex": "#A020F0",
+         "details": ["On sale!", "Faux Leather", "Non-allergenic dye"],
+         "inventory": {
+            "caliWarehouse": 0,
+            "otherWarehouse": 17
+         }
+      },
+      {
+         "sku": "A01*Leather-Green",
+         "title": "Green",
+         "price": 799,
+         "assembly": true,
+         "color": "Green",
+         "colorHex": "#26580F",
+         "details": ["Top Grain Leather", "Non-allergenic dye"],
+         "inventory": {
+            "caliWarehouse": 18,
+            "otherWarehouse": 14
+         }
+      },
+      {
+         "sku": "A01*Leather-Brown",
+         "title": "Brown",
+         "price": 799,
+         "color": "Brown",
+         "colorHex": "#964B00",
+         "details": ["Top Grain Leather"],
+         "inventory": {
+            "caliWarehouse": 4,
+            "otherWarehouse": 0
+         }
+      },
+      {
+         "sku": "A01*Leather-Red",
+         "title": "Red",
+         "price": 799,
+         "assembly": true,
+         "color": "Red",
+         "colorHex": "#800000",
+         "details": ["Top Grain Leather", "Prop 65: Lead Warning"],
+         "inventory": {
+            "caliWarehouse": 1,
+            "otherWarehouse": 7
+         }
+      },
+      {
+         "sku": "A01*Leather-Black",
+         "title": "Black",
+         "price": 899,
+         "color": "Black",
+         "colorHex": "#000000",
+         "details": ["Synthetic Leather"],
+         "inventory": {
+            "caliWarehouse": 2,
+            "otherWarehouse": 8
+         }
+      }
+   ]
+}

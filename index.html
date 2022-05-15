@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./styles/styles.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="main-container">
+         <nav>
+            <h3 class="logo">Design Co</h3 class="logo">
+            <ul class="nav-list">
+               <li class="nav-link"><a class="nav-a" href="">HOME</a></li>
+               <li class="nav-link"><a class="nav-a" href="#featured">PRODUCT</a></li>
+               <li class="nav-link">
+                  <a class="nav-a" href="#collections">COLLECTIONS</a>
+               </li>
+               <li class="nav-link"><a class="nav-a" href="">CONTACT</a></li>
+               <li class="nav-link"><a class="nav-a" href="">LOGIN</a></li>
+               <li class="nav-link"><a class="nav-a" href=""><span class="iconify cart" data-icon="bi:cart"></span></a></li>
+            </ul>
+            <span
+            class="iconify hidden btnMenu"
+            data-icon="eva:menu-fill"
+         ></span>
+         </nav>
+         <header>
+            <div class="headlines">
+               <h2>We got the style</h2>
+               <h1>YOU TRULY <span>LOVE</span></h1>
+               <button class="btn-header"><a  href="#featured">Get Started</a></button>
+            </div>
+            <div class="imgContainer">
+               <img class="image" src="assets/prodbg.jpg" alt="Leather sofa">
+            </div>
+         </header>
+         <main>
+            <section id="collections" class="collections">
+               <h2 class="collections-h2">Our Collections</h2>
+
+               <article>
+                  <img class="image2" src="assets/collection3.jpg" alt="Kitchen Room Collection">
+                  <img class="image2" src="assets/collection1.jpg" alt="Living Room Collection">
+                  <img class="image2" src="assets/collection2.jpg" alt="Bedroom Collection">
+               </article>
+
+            </section>
+            <section class="featured-product">
+               <h2 id="featured" class="featured-product_h2">Featured Product</h2>
+               <div class="featured-subContainer">
+                  <article>
+                     <img class="image3" src="assets/leathersofa.jpg" alt="White leather sofa">
+                     <div id="productLayout" class="productLayout"> 
+                        <div id="productName"></div>
+                        <div id="productPrice"></div>
+                        <div id="productVariant"><p id="chooseColor">Choose A Color</p>
+                        </div>
+                        <div id="zipCode">
+                           <input id="zipInput" maxlength="5" placeholder="zip code" type="text" name="zipInput" value=""/>
+                           <span id="zipCodeBtn">Check Availability</span>
+                        </div>
+                        <span id="stockAvailability"></span>
+                        <div id="productDetails"></div>
+                        <div id="assemblyrequirement"></div>
+                        <div id="quantity">
+                           <button id="minusBtn" disabled="disabled">-</button>
+                              <input id="units" readonly value="" />
+                           <button id="plusBtn" disabled="disabled">+</button>
+                        </div>
+                        <button id="cartBtn" class="disabledBtn" disabled="disabled">Add to Cart</button>
+                        
+
+                     </div>
+                  </article>
+               </div>
+            </section>
+         </main>
+         <footer>
+            <div class="horizontal_line2"></div>
+            <p class="copyR">Design Co Copyrights &copy; 2022</p>
+            <div class="horizontal_line"></div>
+         </footer>
+      </div>
+      <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+      <script src="./js/index.js"></script>
+   </body>
+</html>
