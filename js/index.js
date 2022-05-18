@@ -54,7 +54,7 @@ async function fetchData() {
       productDetailsContainer.append(priceEl);
       productDetailsContainer.append(chooseColorEl);
       assemblyrequirementEl.textContent = `** Assembly required`;
-      stockAvailability.textContent = `Please Enter Zip Code`;
+      stockAvailability.textContent = `Enter zip code to check delivery availability`;
 
       cartBtnEl.addEventListener('click', function () {
          alert(`${unitsEl.value} item(s) added to cart`);
@@ -87,9 +87,9 @@ async function fetchData() {
 
       checkAvailabilityBtn.addEventListener('click', function () {
          if (!zipInputEl.value) return alert('Must have a zip code');
-         if (zipInputEl.value >= '90000' || zipInputEl <= '96699') {
+         if (zipInputEl.value >= '90000' && zipInputEl.value <= '96699') {
             deliveryLocation = 'caliWarehouse';
-         } else if (!zipInputEl.value > '96699' || zipInputEl.value < '90000') {
+         } else {
             deliveryLocation = 'otherWarehouse';
          }
          unitsAvailable = selectedVariant.inventory[deliveryLocation];
