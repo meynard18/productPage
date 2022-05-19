@@ -51,12 +51,19 @@ nav {
    margin-left: 7rem;
    display: flex;
    align-items: center;
+   color: #181818;
 }
 nav ul {
    margin-right: 7rem;
    display: flex;
    align-items: center;
    list-style: none;
+}
+.nav-link {
+   border-bottom: 2px solid transparent;
+}
+.nav-link:hover {
+   border-bottom: 2px solid var(--greylight);
 }
 nav ul li a {
    font-family: roboto;
@@ -235,6 +242,7 @@ header {
    margin-top: 0.5rem;
    padding: 0.25rem;
 }
+
 #zipCodeBtn {
    font-size: 0.875rem;
    padding: 0.25rem;
@@ -259,21 +267,23 @@ header {
 .cartBtn {
    background-color: var(--callToAction);
    cursor: pointer;
-   padding: 0.5rem;
+   padding: 0.6rem 1rem;
    font-size: 1rem;
    color: var(--callToAction2);
+   border: none;
 }
 .cartBtn:hover {
    background-color: var(--btnHover);
-   color: var(--bg2);
+   color: var(--bg1);
 }
 
 .disabledBtn {
    background-color: var(--textColor);
-   padding: 0.5rem;
+   padding: 0.6rem 1rem;
    font-size: 1rem;
    color: var(--greylight);
    cursor: not-allowed;
+   border: none;
 }
 
 #productDetails {

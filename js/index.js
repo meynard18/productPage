@@ -36,7 +36,7 @@ productDetailsContainer.setAttribute('class', 'productDetails');
 // const fetchData = async () => {
 //    try {
 //       const response = await fetch('placeholder.url/products/Leather+Sofa', { method: 'GET'})
-//       const data = response.json();
+//       const data = await response.json();
 //    } catch (error) {
 //       console.error(error);
 //       block of code
@@ -56,9 +56,25 @@ async function fetchData() {
       assemblyrequirementEl.textContent = `** Assembly required`;
       stockAvailability.textContent = `Enter zip code to check delivery availability`;
 
+      cartBtnEl.addEventListener('mouseover', () => {
+         if (deliveryLocation.length === 0) {
+            zipInputEl.focus();
+            stockAvailability.style.color = 'red';
+            stockAvailability.style.fontWeight = '600';
+         }
+      });
+      cartBtnEl.addEventListener('mouseout', () => {
+         if (deliveryLocation.length === 0) {
+            stockAvailability.style.color = '#545050';
+            stockAvailability.style.fontWeight = '500';
+         }
+      });
+
       cartBtnEl.addEventListener('click', function () {
-         alert(`${unitsEl.value} item(s) added to cart`);
-         unitsEl.value = 1;
+         if (deliveryLocation.length !== 0) {
+            alert(`${unitsEl.value} item(s) added to cart`);
+            unitsEl.value = 1;
+         }
       });
 
       function isEmpty() {
